@@ -1,0 +1,11 @@
+/* font 글꼴설정 */
+@font-face {
+    font-family: macho;
+    src: 
+        url(~fonts/EF_MACHO.woff) format("woff"),
+        url(~/fonts/EF_MACHO.ttf) format("truetype");
+}
+
+*{
+    font-family: macho, sans-serif;
+}

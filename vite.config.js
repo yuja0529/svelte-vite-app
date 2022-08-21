@@ -1,7 +1,13 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from "vite"
+import { svelte } from "@sveltejs/vite-plugin-svelte"
+import { adorableCSS } from "adorable-css/vite"
+import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()]
+  plugins: [adorableCSS(), svelte()],
+  resolve: {
+    alias: {
+      "~": path.resolve(__dirname,"./src"),
+    }
+  },
 })
