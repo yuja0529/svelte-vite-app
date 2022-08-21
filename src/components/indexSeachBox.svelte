@@ -2,7 +2,7 @@
     import { createEventDispatcher } from "svelte"
 
     const dispatch = createEventDispatcher();
-    let inputVal = '안녕!?';
+    let inputVal = '';
     function todoAddBtn(){
         dispatch('sayTodo',{
             text: inputVal,
