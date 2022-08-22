@@ -6,6 +6,9 @@
         url(~/fonts/EF_MACHO.ttf) format("truetype");
 }
 
-*{
+h1{
     font-family: macho, sans-serif;
+}
+*{
+    font-family: 'Nanum Gothic', sans-serif;
 }
