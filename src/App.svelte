@@ -7,7 +7,7 @@
   const mainTodoAdd = (event) => {
     let newTodoTxt = event.detail.text;
     let lastID = todoList[todoList.length - 1]['id']; 
-    
+
     // todoList 마지막에 새 아이템 추가
     if (newTodoTxt) {
       const newItem = {
@@ -17,20 +17,23 @@
       }
     
       todoList[todoList.length] = newItem;
-      console.log(todoList);
       newTodoTxt = "";
     } else {
       alert("할일을 적어주세요!")
     }
   };
 
-  const todoList = [
-      {
-          id: 1,
-          text: "스벨트 비트로 개발환경 구축하기",
-          completed: false,
-      },
+  let todoList = [
+    {
+      id: 1,
+      text: "스벨트 비트로 개발환경 구축하기",
+      completed: false,
+    },
   ];
+
+  let mainTodoDelete = (id) => {
+    todoList = todoList.filter((newTodoTxt) => newTodoTxt.id !== id);
+  }
 </script>
 
 <!-- ============================================================================ -->
@@ -42,5 +45,5 @@
 </main>
 
 <div class="p(0/20) vbox m(10/0)">
-  <IndexListItem {todoList}/>
+  <IndexListItem {todoList} {mainTodoDelete}/>
 </div>
