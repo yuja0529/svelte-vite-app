@@ -4,6 +4,7 @@ import { adorableCSS } from "adorable-css/vite"
 import path from "path";
 
 export default defineConfig({
+  base: "/svelte-vite-app/",
   plugins: [adorableCSS(), svelte()],
   resolve: {
     alias: {
