@@ -8,8 +8,8 @@ a{text-decoration:none;}
 table{border-collapse:collapse;border-spacing:0;}
 ol,ul,menu,dir{list-style:none;}
 .c\(\#4B3C2D\){color:#4B3C2D;}
-.c\(\#B6ABAB\){color:#B6ABAB;}
 .c\(\#A9C5B9\){color:#A9C5B9;}
+.c\(\#B6ABAB\){color:#B6ABAB;}
 .font\(20\){font-size:20px}
 .hbox{display:flex;flex-flow:row;align-items:center;}
 .vbox{display:flex;flex-flow:column;align-items:stretch;}
