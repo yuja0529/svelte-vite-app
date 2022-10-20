@@ -33,7 +33,7 @@
 
   let mainTodoDelete = (id) => {
     todoList = todoList.filter((newTodoTxt) => newTodoTxt.id !== id);
-  }
+  };
 </script>
 
 <!-- ============================================================================ -->

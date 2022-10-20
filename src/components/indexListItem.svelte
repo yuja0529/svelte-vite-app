@@ -4,7 +4,7 @@
 </script>
 {#each todoList as item }
 <div class="hbox space-between pointer">
-    <p>{item.text}</p>
+    <p> <input type="checkbox" bind:checked={item.completed} class="m(0/4/0)">{item.text}</p>
     <i class="fa-solid fa-circle-xmark c(#B6ABAB)" on:click="{() => mainTodoDelete(item.id)}"></i>
 </div>
 {/each}

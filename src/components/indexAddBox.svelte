@@ -8,6 +8,7 @@
         dispatch('sayTodo', {
             text: inputVal,
         })
+        inputVal  =  '';
     };
 </script>
 
