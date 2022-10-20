@@ -14,8 +14,10 @@ ol,ul,menu,dir{list-style:none;}
 .hbox{display:flex;flex-flow:row;align-items:center;}
 .vbox{display:flex;flex-flow:column;align-items:stretch;}
 .space-between{justify-content:space-between;}
+.w\(30\){width:30px;}
 .w\(100\%\){width:100%;}
 .h\(80\){height:80px;}
+.h\(30\){height:30px;}
 .h\(40\){height:40px;}
 .m\(10\/0\){margin:10px 0;}
 .m\(0\/0\/10\){margin:0 0 10px;}
